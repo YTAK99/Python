@@ -5,5 +5,5 @@ print('%d + %d = %d'%(A, B, A+B))
 
 
 
-a, b = map(int, input().split())
-print(a+b)
+A, B = map(int, input().split())
+print(A+B)
