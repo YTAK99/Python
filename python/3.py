@@ -4,6 +4,5 @@ B = int(input())
 print('%d + %d = %d'%(A, B, A+B))
 
 
-
-A, B = map(int, input().split())
-print(A+B)
+a, b = map(int, input().split())
+print(a+b)
