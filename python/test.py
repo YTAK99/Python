@@ -1,5 +1,1 @@
-print(5 + 2)
-print(5 - 2)
-print(5 * 2)
-print(5 / 2)
-
+print('Program number 3\n' * 2)
