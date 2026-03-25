@@ -11,6 +11,12 @@ print(f'{i} + {f} = {T}')
 a, b = input().split()
 print(a,b)
 
+
+a, b = input().split()
+na = int(a)
+nb = int(b)
+print(a, '/', b, '=', na//nb, '...', na%nb)
+
 '''
 
 
