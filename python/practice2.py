@@ -25,6 +25,7 @@ print(snack)
 print('-' * 10)
 print('NadoCoding')
 print('*' * 20)
+print('100\n'*10)
 
 let = 'hOw aRe yOu?'
 print(let.lower())  # 전체 소문자로
