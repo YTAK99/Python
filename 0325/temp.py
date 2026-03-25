@@ -8,12 +8,9 @@ print(f'{i} + {f} = {T}')
 
 
 
-a, b = map(int, input(), split())
-print("5 + 10 =". a+b)
-
-
-
 a, b = input().split()
 print(a,b)
 
 '''
+
+
