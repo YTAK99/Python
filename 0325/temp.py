@@ -17,6 +17,15 @@ na = int(a)
 nb = int(b)
 print(a, '/', b, '=', na//nb, '...', na%nb)
 
+
+
+
+pi = 3.141592
+print(f"결과: {pi:.2f}")  # 출력: 3.14
+
+
+
+
 '''
 
 
