@@ -32,7 +32,7 @@ print(let.upper())  # 전체 대문자로
 print(let.capitalize())  # 전체 중에 첫 문자만 대문자로
 print(let.title())  # 각 단어의 첫 문자만 대문자로
 print(let.swapcase())  # 대소문자 상호 변환
-print(let.split())  # 문자열 배열로 분리
+print(let.split())  # 문자열 배열로 분리 (공백이 구분자)
 print(let.count('O'))   # ' ' 안의 문자가 몇번 쓰였는지
 
 s = '나도고등학교'
