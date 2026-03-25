@@ -22,7 +22,7 @@ print('height:', b)
 print('weight:', c)
 
 
-##################################
+################################################################################################
 
 
 a1, a2 = input().split()
@@ -32,6 +32,23 @@ a2, b2 = int(a2), int(b2)
 print(f'{a1} was born in {a2}')
 print(f'{b1} was born in {b2}')
 print(f'{a1} is {b2-a2} years older than {b1}')
+
+
+################################################################################################
+
+
+city = input()
+time, dis = input().split()
+time, dis = int(time), float(dis)
+
+print("Location:", city)
+print(f"Time: {time} hours")
+print(f"Distance: {dis} km")
+
+
+################################################################################################
+
+
 
 
 '''
