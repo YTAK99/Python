@@ -27,6 +27,27 @@ if 조건1:
 print("True는 참" if True else "True는 거짓")
 print("False는 참" if False else "False는 거짓")
 
+################################################################################################
+
+# 삼항 연산자
+[참일 때 값] if [조건문] else [거짓일 때 값]
+
+기존)
+score = 85
++
+if score >= 60:
+    result = "합격"
+else:
+    result = "불합격"
+
+
+새로운)
+score = 85
+result = "합격" if score >= 60 else "불합격"
+
+print(result) # 출력: 합격
+
+
 
 
 
