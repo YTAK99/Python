@@ -1,5 +1,5 @@
 yellow_card = 0
-foul = False
+foul = True        # False면 아무것도 X
 if foul:
     yellow_card += 1
     if yellow_card == 2:
