@@ -12,6 +12,9 @@ range(stop)     # 0 이상 stop 미만
 for x in range(10):
     print(x)        # 0, 1, 2, ..., 9
 
+range(start, stop)      # start 이상 stop 미만
+
+range(1, 10)        # 1 이상 10 미만
 
 range(start, stop, step)     # start 이상 stop 미만 step 만큼 증가
 
