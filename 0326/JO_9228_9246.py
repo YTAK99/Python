@@ -34,7 +34,18 @@ else:
 
 '''
 
+#9234
 
+Dice1 = int(input())
+Dice2 = int(input())
+
+if 1 <= Dice1 and Dice2 <= 6:
+    if Dice1 >= 3 and Dice2 >=3:
+        print("High")
+    elif Dice1 >=3 or Dice2 >=3:
+        print("Mid")
+    else:
+        print("Low")
 
 
 
