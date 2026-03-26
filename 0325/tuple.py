@@ -19,5 +19,5 @@ print(first)
 (one, two, *others) = tu        # Asterisk
 print(others)
 
-(*others, another) = tu         # *others는 [ 리스트 형식으로 저장]
+(*others, another) = tu         # *others는 [ 리스트 형식으로 저장 ]
 print(others)
