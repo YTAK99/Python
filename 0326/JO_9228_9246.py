@@ -52,12 +52,15 @@ if 1 <= Dice1 and Dice2 <= 6:
 
 ################################################################################################
 
+# 9242
 
+YEAR = int(input())
 
-
-
-
-
+if 1 <= YEAR <= 3000:
+    if (YEAR%400 == 0) or (YEAR%4 == 0 and YEAR%100 != 0):
+        print("leap year")
+    else:
+        print("common year")
 
 
 
