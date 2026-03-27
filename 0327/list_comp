@@ -16,5 +16,7 @@ prod_new = [p+“(최신형)” for p in products if p.endswith(“2022”)]
 ['SIRO-2022(최신형)']
 
 
-
+my_list = [“korea”, “English”, “france”]
+new_list = [x.upper() for x in my_list if “a” in x]
+print(new_list)        # KOREA FRANCE
 
