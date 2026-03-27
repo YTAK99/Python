@@ -40,6 +40,27 @@ show_price(customer2) # 함수 호출
     
 
 
+def 함수명(전달값):
+  수행할 문장
+  return 반환값    # ↓↓ 호출했던 곳으로 반환값을 넘김 ↓↓    ◆ 반환값 : 여러 개 반환 가능 (콤마로 구분, 튜플), 반환되는 즉시 함수 탈출
+
+함수명()
+
+
+
+def get_price(is_vip): # True : 단골 손님, False : 일반 손님
+  if is_vip == True:
+    return 10000 # 단골 손님
+  else:
+    return 15000 # 일반 손님
+price = get_price(True)
+print(f'커트 가격은 {price} 원입니다') # 10000
+
+
+
+
+
+
 
 
 
