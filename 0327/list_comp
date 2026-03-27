@@ -1,0 +1,20 @@
+products = ['JOA-2020', 'JOA-2021', 'SIRO-2021', 'SIRO-2022']
+recall = []             # 리콜 대상 제품 리스트트
+for p in products:
+    if p.startswith("SIRO"): # 제품명이 SIRO 로 시작하는가?
+        recall.append(p)
+print(recall)
+
+
+
+products = [“JOA-2020”, “JOA-2021”, “SIRO-2021”, “SIRO-2022”]    # 모든 모델명 뒤에 SE (Special Edition) 을 붙여줘
+prod_se = [p + “SE” for p in products]
+['JOA-2020SE', 'JOA-2021SE', 'SIRO-2021SE', 'SIRO-2022SE']        # 모든 모델명을 소문자로 바꿔줘
+prod_lower = [p.lower() for p in products]
+['joa-2020', 'joa-2021', 'siro-2021', 'siro-2022']              # 22년 제품만 뽑는데 뒤에 (최신형) 이라는 글자를 붙여줘
+prod_new = [p+“(최신형)” for p in products if p.endswith(“2022”)]
+['SIRO-2022(최신형)']
+
+
+
+
