@@ -1,0 +1,7 @@
+radius = int(input())
+area = radius**2 * 3.14
+
+def circle():
+    print(f'{area:.2f}')
+
+circle()
