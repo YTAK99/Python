@@ -18,6 +18,9 @@ print(a)
 a.extend(b)     # 리스트 확장
 print(a)
 
+.split()     # 문자열 분리
+.strip()     # 문자열 양쪽(앞뒤)의 공백을 제거
+
 # insert()      # 원하는 위치에 값 추가
 # pop()         # 원하는 위치 의 값 삭제
 # clear()       # 모든 값 삭제
