@@ -8,16 +8,39 @@ finally:
   마지막으로 수행할 문장
 
 
+################################################################################################
 
 
 
-
+num1, num2 = 1, 0
 try:
   result = num1/num2
   print(f'연산 결과는 {result}입니다')
-except:
-  print('에러가 발생했어요')
+except Exception as err:
+  print('에러가 발생했어요:', err)
 else:
   print('정상 동작헀어요')
 finally:
   print('수행 종료')
+
+
+
+################################################################################################
+
+
+num1, num2 = 1, '0'
+try:
+  result = num1/num2
+  print(f'연산 결과는 {result}입니다')
+except ZeroDivisionError:                    # except는 elif처럼 배치 순서 중요
+  print('0으로 나눌 수 없어요오')
+except TypeError:
+  print('값의 형태가 이상해요오')
+except Exception as err:
+  print('에러가 발생했어요오:', err)
+
+
+
+
+
+
