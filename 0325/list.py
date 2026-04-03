@@ -29,3 +29,13 @@ print(a)
 # copy()        # 리스트 복사
 # count()       # 어떤 값이 몇 개 있는지
 # index()       # 어떤 값이 어디에 있는지
+
+
+# 문자열 붙여서
+print(list(reversed(nums)))
+'구분자'.join(리스트)
+
+
+# 거꾸로
+A = "apple orange banana"
+print(*A.split()[::-1])
