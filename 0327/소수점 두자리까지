@@ -5,3 +5,12 @@ def circle():
     print(f'{area:.2f}')
 
 circle()
+
+
+############################################################
+
+
+A = int(input())
+B = float(input())
+
+print("%d + %.2f = %.2f"%(A, B, A+B))
