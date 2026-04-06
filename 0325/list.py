@@ -39,3 +39,8 @@ print(list(reversed(nums)))
 # 거꾸로
 A = "apple orange banana"
 print(*A.split()[::-1])
+
+
+
+A = list(map(int, input().split()))
+print(A)
