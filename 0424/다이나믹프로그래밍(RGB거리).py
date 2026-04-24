@@ -105,3 +105,47 @@ for i in range(1, N):
 
 # 마지막 집에서 최소값
 print(min(dp[N-1]))
+
+
+############################################################################################################
+
+## 1번 집의 색은 2번, N번 집의 색과 같지 않아야 한다.
+## N번 집의 색은 N-1번, 1번 집의 색과 같지 않아야 한다
+
+import sys
+
+# 입력을 빠르게 받기 위해 sys.stdin.readline 사용
+N = int(sys.stdin.readline())
+cost = []
+for _ in range(N):
+    cost.append(list(map(int, sys.stdin.readline().split())))
+
+INF = 1000 * 1000 + 1 # 최대 비용보다 큰 값으로 설정
+total_min = INF
+
+# 1번 집의 색을 빨강(0), 초록(1), 파랑(2)으로 각각 고정해보는 과정
+for first_color in range(3):
+    # DP 테이블 초기화 (매번 새로 계산)
+    # dp[i][0]: i번째 집이 빨강일 때의 최소 비용
+    dp = [[0] * 3 for _ in range(N)]
+    
+    # 1. 첫 번째 집 색칠하기
+    for i in range(3):
+        if i == first_color:
+            dp[0][i] = cost[0][i]
+        else:
+            # 선택하지 않을 색은 무한대 처리하여 이후 계산에서 제외
+            dp[0][i] = INF
+
+    # 2. 2번 집부터 N번 집까지 DP 진행
+    for i in range(1, N):
+        dp[i][0] = cost[i][0] + min(dp[i-1][1], dp[i-1][2])
+        dp[i][1] = cost[i][1] + min(dp[i-1][0], dp[i-1][2])
+        dp[i][2] = cost[i][2] + min(dp[i-1][0], dp[i-1][1])
+
+    # 3. 마지막 집(N-1)의 색이 첫 번째 집과 다른 경우만 최솟값 갱신
+    for i in range(3):
+        if i != first_color:
+            total_min = min(total_min, dp[N-1][i])
+
+print(total_min)
