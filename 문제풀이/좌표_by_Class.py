@@ -7,10 +7,14 @@ class Coordinate:
         return Coordinate(self.x + other.x, self.y + other.y)
     def __sub__(self, other):
         return Coordinate(self.x - other.x, self.y - other.y)
-    def center(self, other):
-        return Coordinate((self.x + other.x) / 2, (self.y + other.y) / 2)
-    # def center(p1, p2):
+    def __truediv__(self, value):
+        return Coordinate(self.x / value, self.y / value)
+   
+    # def center(self, other):
+    #     return Coordinate((self.x + other.x) / 2, (self.y + other.y) / 2)
+    # # def center(p1, p2):
     # return Coordinate((p1.x + p2.x) / 2, (p1.y + p2.y) / 2)
+    
     def __str__(self):
         return f"({self.x:.1f}, {self.y:.1f})"
 
@@ -22,4 +26,7 @@ p2 = Coordinate(x2, y2)
 
 print("add =", p1 + p2)
 print("sub =", p1 - p2)
-print("center =", p1.center(p2))
+# print("center =", p1.center(p2))
+
+center = (p1 + p2) / 2
+print("center =", center)
