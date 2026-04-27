@@ -3,5 +3,4 @@
 inp = input()
 
 if inp == inp[::-1]:
-    print(inp)
-    print("입력하신 단어는 회문(Palindrome)입니다.")
+    print(inp,"\n입력하신 단어는 회문(Palindrome)입니다.")
