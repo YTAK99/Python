@@ -41,6 +41,18 @@ A = "apple orange banana"
 print(*A.split()[::-1])
 
 
-
+# 입력받은거 리스트로
 A = list(map(int, input().split()))
 print(A)
+
+
+# 리스트의 앞에서 N개만 남기고 나머지 버리기
+lst = lst[:N]  
+
+
+# 반복문으로 정확히 N개만 받기
+while len(lst) < N:
+    lst.extend(map(int, input().split()))
+
+# 딱 N개만 사용하기
+lst = list(map(int, input().split()))[:N]
