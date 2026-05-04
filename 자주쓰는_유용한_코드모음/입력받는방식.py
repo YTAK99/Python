@@ -56,3 +56,5 @@ for _ in range(N):
 
 N = int(input())
     lst = list(map(int, input().split()))[:N]   # 정확히 N개만 받기
+
+
