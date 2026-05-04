@@ -27,4 +27,52 @@ for b in buildings:
     if b.year >= Y and b.price <= P:
         print(b)
 
-  ###################################################################################################################
+
+####################################################################################################################
+
+#좌표 중심
+
+class Coordinate:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __add__(self, other):
+        return Coordinate(self.x + other.x, self.y + other.y)
+    def __sub__(self, other):
+        return Coordinate(self.x - other.x, self.y - other.y)
+    def center(self, other):
+        return Coordinate((self.x + other.x) / 2, (self.y + other.y) / 2)
+    def __str__(self):
+        return f"({self.x:.1f}, {self.y:.1f})"
+
+x1, y1 = map(float, input().split())
+x2, y2 = map(float, input().split())
+
+p1 = Coordinate(x1, y1)
+p2 = Coordinate(x2, y2)
+
+print("add =", p1 + p2)
+print("sub =", p1 - p2)
+print("center =", p1.center(p2))
+
+###### 출력 ######
+#  10.0 36.2
+#  12.6 5.0
+# add = 22.6, 41.2
+# sub = -2.6, 31.2
+# center = 11.3, 20.6
+
+
+####################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
