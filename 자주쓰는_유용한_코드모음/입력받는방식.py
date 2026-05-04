@@ -43,3 +43,12 @@ N = int(sys.stdin.readline().strip())
 # 입력 개수 여러개(여러 변수).  r, g, b에 나눠서 저장. 값을 많이 입력받아야 할때 좋음
 import sys
  r, g, b = map(int, sys.stdin.readline().split())
+
+######################################################################################################################################################################################################
+
+
+N = int(input())
+for _ in range(N):
+    lst = []
+    lst.extend(list(map(int, input().split())))        # append로 하면 2중리스트가 돼서 extend사용
+    # print(f'#{i+1} {max(lst)-min(lst)}')
