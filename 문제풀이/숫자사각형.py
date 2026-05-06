@@ -8,22 +8,6 @@ for i in range(n):
     start = i * m + 1
 
     if i % 2 == 0:
-        for j in range(start, start + m):
-            print(j, end=" ")
-    else:
-        for j in range(start + m - 1, start - 1, -1):
-            print(j, end=" ")
-
-    print()
-
-############################################################################################################################################################
-
-n, m = map(int, input().split())
-
-for i in range(n):
-    start = i * m + 1
-
-    if i % 2 == 0:
         # 왼 -> 오른쪽
         for j in range(start, start + m):
             print(j, end=" ")
