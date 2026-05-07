@@ -9,8 +9,16 @@ print(f"결과: {pi:.2f}")  # 출력: 3.14
 
 ########################################################################################
 
+문자열.replace(바꿀값, 새값) # 바꿀값, 새값 모두 문자열 형태여야 한다. 문자열끼리만 바꿀 수 있다.
 
+예)
+numbers = onetwothreefourfivesixseveneightnine
+num_list = ["zero", "one", "two", "three", "four",
+                "five", "six", "seven", "eight", "nine"]
 
+for i in range(10):
+    numbers = numbers.replace(num_list[i], str(i))
+return int(numbers)
 
 
 ########################################################################################
