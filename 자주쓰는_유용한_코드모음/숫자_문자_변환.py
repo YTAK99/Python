@@ -3,7 +3,7 @@ def solution(age):
     answer = ""
 
     for i in str(age):
-        answer += alpha[int(i)]
+        answer += alpha[int(i)]        # 문자열도 인덱싱 가능
 
     return answer
 
