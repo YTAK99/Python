@@ -115,6 +115,16 @@ print(D + D[1:3] + [D[1]])      # C[1]은 문자열이라 []로 한번 더 감�
 
 ########################################################################################
 
-# n만큼 잘라서 리슽트에 저장
+# n만큼 잘라서 리스트에 저장
 def solution(my_str, n):
     return [my_str[i:i+n] for i in range(0, len(my_str), n)]
+
+########################################################################################
+
+# 응급도가 [30, 10, 23, 6, 100] 로 주어지면 진료순서 반환 [2,4,3,5,1]
+def solution(emergency):
+    answer = []
+    rank = sorted(emergency, reverse=True)
+    for i in emergency:
+        answer.append(rank.index(i) + 1)
+    return answer
