@@ -21,14 +21,22 @@ print(a)
 .split()     # 문자열 분리
 .strip()     # 문자열 양쪽(앞뒤)의 공백을 제거
 
-# insert()      # 원하는 위치에 값 추가
-# pop()         # 원하는 위치 의 값 삭제
-# clear()       # 모든 값 삭제
-# sort()        # 값 순서대로 정렬렬  
-# reverse()     # 순서 뒤집기
-# copy()        # 리스트 복사
-# count()       # 어떤 값이 몇 개 있는지
-# index()       # 어떤 값이 어디에 있는지
+list.insert(객체를추가할 위치, 추가할 객체)      # 원하는 위치에 값 추가
+# .pop()         # 원하는 위치 의 값 삭제
+# .clear()       # 모든 값 삭제
+
+list.sort()        # 오름차순 정렬(값 순서대로 정렬)
+list.sort(reverse=True)    # 내림차순 정렬
+list.reverse()     # 순서 뒤집기
+list2 = sorted(list1)    # 정렬된 리스트 반환
+list2 = sorted(list1, reverse=True)    # 내림차순 정렬된 리스트 반환
+
+list.count()       # 어떤 값이 몇 개 있는지
+
+list.index(검색할element, start, end)       # 위치 반환. 어떤 값이 어디에 있는지
+
+list2 = list1    # 주소가 복사됨(같은 객체)
+list2 = list1.copy()        # 리스트 값이 복사됨(다른 객체)
 
 ########################################################################################
 
