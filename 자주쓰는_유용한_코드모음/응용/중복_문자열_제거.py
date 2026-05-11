@@ -14,6 +14,7 @@ def remove_repeat(s):
         else:
             stack.append(ch)
 
+    #print(stack)
     return len(stack)
 
 
