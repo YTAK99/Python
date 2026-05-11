@@ -9,7 +9,7 @@ def remove_repeat(s):
     stack = []
 
     for ch in s:
-        if stack and stack[-1] == ch:
+        if stack and stack[-1] == ch:   # 스택이 비어있지 않고, 마지막 문자와 현재 문자가 같다면
             stack.pop()
         else:
             stack.append(ch)
