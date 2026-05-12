@@ -136,3 +136,12 @@ def solution(emergency):
     for i in emergency:
         answer.append(rank.index(i) + 1)
     return answer
+
+########################################################################################
+# 2차원 리스트 만들기
+# num_list = [1, 2, 3, 4, 5, 6, 7, 8] 		
+# n =	2	
+# result = [[1, 2], [3, 4], [5, 6], [7, 8]]
+
+def solution(num_list, n):
+    return [num_list[i : i + n] for i in range(0, len(num_list), n)]
