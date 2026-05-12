@@ -13,3 +13,5 @@ def solution(letter):
         answer += morse[code]
 
     return answer
+
+# 모스부호를 주면 딕셔너리에서 대응되는 알파벳을 조합해 해독한 값을 반환
