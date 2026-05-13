@@ -13,3 +13,12 @@ def solution(n):
 
 print(solution(7))      # = 3
 print(solution(3628800))    # = 10
+
+
+##########################################################################
+# import math
+# def solution(n):
+#     t=1
+#     while n>=math.factorial(t):
+#         t+=1
+#     return t-1
