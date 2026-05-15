@@ -19,7 +19,7 @@ del person["age"]    # 키 삭제
 
 ################################################################################################################
 
-for key in person:    # key 반복문 돌리기
+for key in person:    # key 반복문 돌리기        for key in person.keys() 랑 똑같음
     print(key)
 
 for value in person.values():    # value 반복문 돌리기
