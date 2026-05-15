@@ -20,3 +20,16 @@ print(",".join(inp))
 def solution(myString):
     return sorted([s for s in myString.split("x") if s])    # if s != ""
 
+################################################################################################################
+
+# 문자열 중에서 숫자(연속된건 붙여서)들 끼리 더하기
+
+def solution(my_string):
+    # 숫자가 아닌 문자(알파벳)를 전부 공백(' ')으로 바꿉니다.
+    for char in my_string:
+        if not char.isdigit():
+            my_string = my_string.replace(char, ' ')
+    
+    # 공백을 기준으로 나눠서 리스트로 만든 뒤 합산합니다.
+    # split()은 연속된 공백을 하나로 처리해주므로 편리합니다.
+    return sum(int(n) for n in my_string.split())
