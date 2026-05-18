@@ -81,3 +81,23 @@ for num in range(11, 16):
 
 
 ########################################################################################
+
+message = "here is muzi here is a secret message"
+
+word = "here"
+positions = []
+
+start = 0
+
+while True:
+    idx = message.find(word, start)
+
+    if idx == -1:
+        break
+
+    positions.append(idx)
+    start = idx + 1
+
+print(positions)
+
+########################################################################################
