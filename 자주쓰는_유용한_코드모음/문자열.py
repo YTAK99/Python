@@ -82,6 +82,21 @@ for num in range(11, 16):
 
 ########################################################################################
 
+''' 공백제거법 '''
+text = "  Hello  World  "
+
+#1. 
+result = text.replace(" ", "")
+print(result)   # HelloWorld
+
+#2.
+result = ''.join(text.split())
+print(result)   # HelloWorld
+
+
+########################################################################################
+
+
 message = "here is muzi here is a secret message"
 
 word = "here"
